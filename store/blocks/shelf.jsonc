@@ -1,0 +1,23 @@
+
+{
+  "shelf#home": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "category": "",
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "137",
+      "paginationDotsVisibility": false,
+      "hideUnavailableItems": true,
+      "productList": {
+        "maxItems": 15,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Coleção Atmosphere"
+      }
+    }
+  }
+}

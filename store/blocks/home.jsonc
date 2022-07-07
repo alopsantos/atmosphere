@@ -1,15 +1,33 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#home1",
+      "shelf#home"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#home1": {
+    "children": [
+      "image#example"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home2": {
+    "children": [
+      "image#alinemezzaribrand"
+    ]
+  },
+  "image#example": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/210913/Spring-Summer-2022-Estacao-Store.jpg?v=637629297631170000",
+      "maxHeight": 1460
+    }
+  },
+  "image#alinemezzaribrand": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/210913/Spring-Summer-2022-Estacao-Store.jpg?v=637629297631170000",
+      "maxHeight": 1460
     }
   }
 }
