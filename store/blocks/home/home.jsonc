@@ -2,7 +2,10 @@
   "store.home": {
     "blocks": [
       "flex-layout.row",
-      "slider-layout#home"
+      "slider-layout#home",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile",
+      "tab-layout#home"
     ]
   },
   "flex-layout.row": {
@@ -82,6 +85,111 @@
   "image#brand6": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png"
+    }
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": [
+      "rich-text#dektop",
+      "image#desktop"
+    ]
+  },
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  "rich-text#dektop": {
+    "props": {
+      "text": "# Your Coffe, Your Way \n ### New Coffee Makers Collection (I'm on desktop)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "# Your Coffe, Your Way \n ### New Coffee Makers Collection (I'm on mobile)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "Coffee Makers Collection"
+    }
+  },
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "Coffee Makers Collection"
+    }
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ]
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#hom1",
+      "tab-list.item#hom2"
+    ]
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2"
+    ]
+  },
+  "tab-list.item#hom1": {
+    "props": {
+      "tabId": "majorAppliances",
+      "label": "Major Appliances",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#hom2": {
+    "props": {
+      "tabId": "electronics",
+      "label": "Eletronicos"
+    }
+  },
+  "tab-content.item#1": {
+    "children": [
+      "rich-text#1"
+    ],
+    "props": {
+      "tabId": "majorAppliances"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "electronics"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Texto para Major Appliances",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto para Electronics",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
     }
   }
 }
