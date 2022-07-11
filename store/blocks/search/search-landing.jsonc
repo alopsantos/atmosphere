@@ -19,5 +19,6 @@
     "blocks": [
       "search-result-layout.desktop"
     ]
-  }
+  },
+  "image#landingbanner": {}
 }

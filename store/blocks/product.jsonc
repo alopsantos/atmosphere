@@ -1,10 +1,10 @@
 {
   "store.product": {
     "children": [
+      "condition-layout.product",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "condition-layout.product",
-      "ricth-text#product"
+      "rich-text#product"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -27,6 +27,7 @@
     },
     "children": [
       "product-images",
+      "video#product",
       "flex-layout.col#right-col"
     ]
   },
@@ -102,11 +103,18 @@
       "blockClass": "cover"
     }
   },
-  "ricth-text#product": {
+  "rich-text#product": {
     "props": {
       "text": "# Your Coffe, Your Way \n ### New Coffee Makers Collection (I'm on mobile)",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
+    }
+  },
+  "video#product": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=9VC_Q5gkq9A&list=TLGGb32-igzahkkxMTA3MjAyMg&t=2s?controls=0",
+      "width": "320",
+      "height": "569"
     }
   }
 }
