@@ -1,0 +1,104 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ]
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search",
+      //"search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      //"search-content",
+      //"filter-navigator.v3",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more"
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "breadcrumb.search",
+      //"search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      //"search-content",
+      //"filter-navigator.v3",
+      "search-fetch-more"
+    ]
+  },
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "hideUnavailableItems": false
+    }
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf#search"
+    ]
+  },
+  "product-summary.shelf#search": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price",
+      //"product-summary-sku-selector",
+      "product-summary-buy-button",
+      "product-rating-inline"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "blockClass": "prateleira-home"
+    }
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": true,
+      "hoverImageLabel": "imageLabel",
+      "aspectRatio": "3:4",
+      "badgeText": "Off"
+    }
+  }
+}

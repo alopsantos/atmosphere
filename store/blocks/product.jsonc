@@ -1,0 +1,8 @@
+{
+  "store.product": {
+    "children": [
+      "product-summary.shelf#home",
+      "rich-text#2"
+    ]
+  }
+}
