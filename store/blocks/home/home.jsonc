@@ -207,7 +207,8 @@
   },
   "rich-text#trigger": {
     "props": {
-      "text": "CLICK ME"
+      "text": "CLICK ME 2",
+      "textAlignment": "CENTER"
     }
   },
   "modal-layout#first": {
